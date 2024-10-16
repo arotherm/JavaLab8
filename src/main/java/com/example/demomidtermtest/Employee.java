@@ -2,33 +2,32 @@ package com.example.demomidtermtest;
 
 import java.util.Date;
 import java.util.regex.Pattern;
-
 public class Employee {
-    private int employeeId;
+    private Integer employeeId;
     private String firstName;
     private String lastName;
     private String phoneNumber;
-    private Date hireDate;
+    private String hireDate;
     private String jobCode;
-    private int salary;
 
-    public Employee(int employeeId, String firstName, String lastName, String phoneNumber, Date hireDate, String jobCode, int salary) {
+    // Constructor
+    public Employee(Integer employeeId, String firstName, String lastName, String phoneNumber, Date hireDate, String jobCode) {
         setEmployeeId(employeeId);
         setFirstName(firstName);
         setLastName(lastName);
-        setPhoneNumber(phoneNumber);
         setHireDate(hireDate);
+        setPhoneNumber(phoneNumber);
         setJobCode(jobCode);
-        setSalary(salary);
     }
 
-    public int getEmployeeId() {
+    // Getters and Setters with validation
+    public Integer getEmployeeId() {
         return employeeId;
     }
 
-    public void setEmployeeId(int employeeId) {
-        if (employeeId <= 0) {
-            throw new IllegalArgumentException("Canot be negative or 0");
+    public void setEmployeeId(Integer employeeId) {
+        if (employeeId == null || employeeId <= 0) {
+            throw new IllegalArgumentException("Employee ID must be a positive integer.");
         }
         this.employeeId = employeeId;
     }
@@ -39,7 +38,7 @@ public class Employee {
 
     public void setFirstName(String firstName) {
         if (firstName == null || firstName.length() <= 1) {
-            throw new IllegalArgumentException("Frst name must be more than 1 character or not blankk.");
+            throw new IllegalArgumentException("First name must be more than 1 character.");
         }
         this.firstName = firstName;
     }
@@ -50,9 +49,22 @@ public class Employee {
 
     public void setLastName(String lastName) {
         if (lastName == null || lastName.length() <= 1) {
-            throw new IllegalArgumentException("Last Name has to eb bigger than 1 characters");
+            throw new IllegalArgumentException("Last name must be more than 1 character.");
         }
         this.lastName = lastName;
+    }
+
+    public String getHireDate() {
+        return hireDate;
+    }
+
+    public void setHireDate(Date hireDate) {
+        // Assuming the hireDate is in the format "yyyy-MM-dd", more advanced date parsing could be added.
+        if (hireDate == null || !Pattern.matches("\\d{4}-\\d{2}-\\d{2}", hireDate.toString())) {
+            throw new IllegalArgumentException("Hire date must be in the format 'yyyy-MM-dd'.");
+        }
+        this.hireDate = hireDate.toString();
+
     }
 
     public String getPhoneNumber() {
@@ -60,22 +72,10 @@ public class Employee {
     }
 
     public void setPhoneNumber(String phoneNumber) {
-        String regex = "^(\\+1|1)?\\d{10}$";
-        if (!Pattern.matches(regex, phoneNumber)) {
-            throw new IllegalArgumentException("Please put a valid phone num. ");
+        if (!phoneNumber.matches("\\d{3}.\\d{3}.\\d{4}")) {
+            throw new IllegalArgumentException("Phone number must match the North American dialing plan (e.g., 123-456-7890).");
         }
         this.phoneNumber = phoneNumber;
-    }
-
-    public Date getHireDate() {
-        return hireDate;
-    }
-
-    public void setHireDate(Date hireDate) {
-        if (hireDate == null || hireDate.after(new Date())) {
-            throw new IllegalArgumentException("Hire date cannot be in the future.");
-        }
-        this.hireDate = hireDate;
     }
 
     public String getJobCode() {
@@ -83,18 +83,10 @@ public class Employee {
     }
 
     public void setJobCode(String jobCode) {
-        String regex = "^[A-Z]+_[A-Z]+$"; //my Attempt at having ALPHA+'_'+ALPHA
-        if (!Pattern.matches(regex, jobCode)) {
-            throw new IllegalArgumentException("Job code must be all capital letters with one underscore.");
+        if (!jobCode.matches("[A-Z]+_[A-Z]+")) {
+            throw new IllegalArgumentException("Job code must be all uppercase letters with one underscore.");
         }
         this.jobCode = jobCode;
     }
 
-    public int getSalary() {
-        return salary;
-    }
-
-    public void setSalary(int salary) {
-        this.salary = salary;
-    }
 }

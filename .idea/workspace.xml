@@ -4,21 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="679cbeac-0f7d-48a3-86f5-c789855a6b77" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demomidtermtest/DBUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demomidtermtest/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demomidtermtest/EmployeeApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demomidtermtest/EmployeeTableViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/demomidtermtest/employeeTableView.fxml" afterDir="false" />
+    <list default="true" id="679cbeac-0f7d-48a3-86f5-c789855a6b77" name="Changes" comment="•&#9;Create/update the Employee class">
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demomidtermtest/DBUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demomidtermtest/DBUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demomidtermtest/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demomidtermtest/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demomidtermtest/EmployeeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demomidtermtest/EmployeeApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demomidtermtest/EmployeeTableViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demomidtermtest/EmployeeTableViewController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +23,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;arotherm&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/arotherm/Alexander_Rothermel_Java_MidTermTest.git&quot;,
+    &quot;accountId&quot;: &quot;f283683d-346f-4ab0-958e-dcd809046f86&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2nXT754umYuQb0MHCFzs8xOPwNZ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -41,14 +48,15 @@
     "Application.EmployeeApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "corretto-19",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/alexrothermel/Desktop/demoMidTermTest",
+    "last_opened_file_path": "/Users/alexrothermel/IdeaProjects/demoMidTermTest",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.41674334",
     "settings.editor.selected.configurable": "preferences.pluginManager",
@@ -71,11 +79,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729118250369</updated>
-      <workItem from="1729118251454" duration="1083000" />
+      <workItem from="1729118251454" duration="2683000" />
+      <workItem from="1729121250715" duration="496000" />
+      <workItem from="1729121909777" duration="754000" />
     </task>
+    <task id="LOCAL-00001" summary="•&#9;Create/update the Employee class">
+      <option name="closed" value="true" />
+      <created>1729119477423</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729119477423</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="•&#9;Create/update the Employee class" />
+    <option name="LAST_COMMIT_MESSAGE" value="•&#9;Create/update the Employee class" />
   </component>
 </project>

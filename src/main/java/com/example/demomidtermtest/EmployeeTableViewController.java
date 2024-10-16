@@ -50,21 +50,40 @@ public class EmployeeTableViewController implements Initializable {
 
     @FXML
     private TableView<Employee> tableEmployees;
+
     /*
     * When start the window,show all employees and initial the combobox list
     * */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+        //When start the window,show all employees and initial the combobox list
+        try {
+            updateTableView();
+            combAreaCode.getItems().addAll(DBUtility.getAreaCodes());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        //Set the table view columns
+        colEmployeeId.setCellValueFactory(new PropertyValueFactory<>("employeeId"));
+        colFirstName.setCellValueFactory(new PropertyValueFactory<>("firstName"));
+        colLastName.setCellValueFactory(new PropertyValueFactory<>("lastName"));
+        colPhoneNumber.setCellValueFactory(new PropertyValueFactory<>("phoneNumber"));
+        colHireDate.setCellValueFactory(new PropertyValueFactory<>("hireDate"));
+        colJobCode.setCellValueFactory(new PropertyValueFactory<>("jobCode"));
     }
+
 
 
     /*
     * Update this method to update the Tableview control
     * */
+
     @FXML
     public void updateTableView () throws SQLException
     {
+        ArrayList<Employee> employees = DBUtility.getEmployees();
+        tableEmployees.getItems().clear();
+        tableEmployees.getItems().addAll(employees);
 
     }
 }
