@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="679cbeac-0f7d-48a3-86f5-c789855a6b77" name="Changes" comment="Display all data on start" />
+    <list default="true" id="679cbeac-0f7d-48a3-86f5-c789855a6b77" name="Changes" comment="•&#9;Show filtered employees by one condition">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demomidtermtest/DBUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demomidtermtest/DBUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demomidtermtest/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demomidtermtest/Employee.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,26 +37,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.EmployeeApplication.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "corretto-19",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/alexrothermel/IdeaProjects/demoMidTermTest",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.41674334",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.EmployeeApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-19&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/alexrothermel/IdeaProjects/demoMidTermTest&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.41674334&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -71,7 +75,8 @@
       <updated>1729118250369</updated>
       <workItem from="1729118251454" duration="2683000" />
       <workItem from="1729121250715" duration="496000" />
-      <workItem from="1729121909777" duration="1375000" />
+      <workItem from="1729121909777" duration="2510000" />
+      <workItem from="1729124428212" duration="669000" />
     </task>
     <task id="LOCAL-00001" summary="•&#9;Create/update the Employee class">
       <option name="closed" value="true" />
@@ -89,7 +94,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729122722156</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="•&#9;Show filtered employees by one condition">
+      <option name="closed" value="true" />
+      <created>1729123597828</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729123597828</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,6 +111,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="•&#9;Create/update the Employee class" />
     <MESSAGE value="Display all data on start" />
-    <option name="LAST_COMMIT_MESSAGE" value="Display all data on start" />
+    <MESSAGE value="•&#9;Show filtered employees by one condition" />
+    <option name="LAST_COMMIT_MESSAGE" value="•&#9;Show filtered employees by one condition" />
   </component>
 </project>

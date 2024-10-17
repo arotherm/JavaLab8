@@ -72,8 +72,8 @@ public class Employee {
     }
 
     public void setPhoneNumber(String phoneNumber) {
-        if (!phoneNumber.matches("\\d{3}.\\d{3}.\\d{4}")) {
-            throw new IllegalArgumentException("Phone number must match the North American dialing plan (e.g., 123-456-7890).");
+        if (!phoneNumber.matches("\\d{3}[- .]?\\d{3}[- .]?\\d{4}")) {
+            throw new IllegalArgumentException("Phone number must have dots between numbers (e.g., 123.456.7890).");
         }
         this.phoneNumber = phoneNumber;
     }
@@ -84,7 +84,7 @@ public class Employee {
 
     public void setJobCode(String jobCode) {
         if (!jobCode.matches("[A-Z]+_[A-Z]+")) {
-            throw new IllegalArgumentException("Job code must be all uppercase letters with one underscore.");
+            throw new IllegalArgumentException("Jb code must be all uppercase letters with one underscore.");
         }
         this.jobCode = jobCode;
     }
