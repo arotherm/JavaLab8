@@ -11,13 +11,23 @@ public class DBUtility {
     /*
     *To Do: Update this method to get all or filtered Employees from the database
     * */
-    public static ArrayList<Employee> getEmployees(String... sql) throws SQLException {
-
+    public static ArrayList<Employee> getEmployees(boolean isSenior, boolean isIT, String areaCode) throws SQLException {
         ArrayList<Employee> employees = new ArrayList<>();
-        String query = "select * from employee";
-        try(Connection conn= DriverManager.getConnection(connectionURL,user,password);
-            Statement stmt=conn.createStatement();
-            ResultSet resultSet=stmt.executeQuery(query);) {
+        StringBuilder query = new StringBuilder("SELECT * FROM employee WHERE 1=1");
+
+        if (isSenior) {
+            query.append(" AND hireDate <= DATE_SUB(CURDATE(), INTERVAL 10 YEAR)");
+        }
+        if (isIT) {
+            query.append(" AND jobCode = 'IT_PROG'");
+        }
+        if (areaCode != null && !areaCode.equals("All")) {
+            query.append(" AND phoneNumber LIKE '").append(areaCode).append("%'");
+        }
+
+        try (Connection conn = DriverManager.getConnection(connectionURL, user, password);
+             Statement stmt = conn.createStatement();
+             ResultSet resultSet = stmt.executeQuery(query.toString())) {
 
             while (resultSet.next()) {
                 int employeeId = resultSet.getInt("employeeId");
@@ -30,14 +40,12 @@ public class DBUtility {
                 Employee employee = new Employee(employeeId, firstName, lastName, phoneNumber, hireDate, jobCode);
                 employees.add(employee);
             }
-        }
-        catch (SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
 
         return employees;
     }
-
     /*
      *To Do: Update this method to get the area codes for the combo Box list
      * */

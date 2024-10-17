@@ -79,11 +79,14 @@ public class EmployeeTableViewController implements Initializable {
     * */
 
     @FXML
-    public void updateTableView () throws SQLException
-    {
-        ArrayList<Employee> employees = DBUtility.getEmployees();
+    public void updateTableView() throws SQLException {
+        boolean isSenior = checkSenior.isSelected();
+        boolean isIT = checkIT.isSelected();
+        String areaCode = combAreaCode.getValue();
+
+        ArrayList<Employee> employees = DBUtility.getEmployees(isSenior, isIT, areaCode);
         tableEmployees.getItems().clear();
         tableEmployees.getItems().addAll(employees);
-
+        lableTotal.setText("Total: " + employees.size());
     }
 }

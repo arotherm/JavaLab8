@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="679cbeac-0f7d-48a3-86f5-c789855a6b77" name="Changes" comment="•&#9;Create/update the Employee class">
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demomidtermtest/DBUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demomidtermtest/DBUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demomidtermtest/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demomidtermtest/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demomidtermtest/EmployeeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demomidtermtest/EmployeeApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demomidtermtest/EmployeeTableViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demomidtermtest/EmployeeTableViewController.java" afterDir="false" />
-    </list>
+    <list default="true" id="679cbeac-0f7d-48a3-86f5-c789855a6b77" name="Changes" comment="Display all data on start" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +71,7 @@
       <updated>1729118250369</updated>
       <workItem from="1729118251454" duration="2683000" />
       <workItem from="1729121250715" duration="496000" />
-      <workItem from="1729121909777" duration="754000" />
+      <workItem from="1729121909777" duration="1375000" />
     </task>
     <task id="LOCAL-00001" summary="•&#9;Create/update the Employee class">
       <option name="closed" value="true" />
@@ -91,7 +81,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729119477423</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Display all data on start">
+      <option name="closed" value="true" />
+      <created>1729122722156</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729122722156</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,6 +97,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="•&#9;Create/update the Employee class" />
-    <option name="LAST_COMMIT_MESSAGE" value="•&#9;Create/update the Employee class" />
+    <MESSAGE value="Display all data on start" />
+    <option name="LAST_COMMIT_MESSAGE" value="Display all data on start" />
   </component>
 </project>
